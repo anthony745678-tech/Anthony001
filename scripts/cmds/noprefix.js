@@ -2,7 +2,7 @@ module.exports = {
 	config: {
 		name: "noprefix",
 		version: "1.0",
-		author: "MAHBUB ULLASH",
+		author: "MAHBUB ASHIK",
 		countDown: 5,
 		role: 0,
 		shortDescription: "noprefix custom question and answer",
@@ -35,8 +35,8 @@ module.exports = {
 				reply: "আমি আপনার জন্য অপেক্ষা করছিলাম! 😄"
 			},
 			{
-				keyullash: ["ullash bai", "Ullash"],
-				reply: "উল্লাস বস ব্যস্ত আছে কি বলবি আমাকে বল ❤️"
+				keyullash: ["Ashik bai", "ashik"],
+				reply: "আশিক বস ব্যস্ত আছে কি বলবি আমাকে বল ❤️"
 			}
 		];
 
