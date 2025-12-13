@@ -6,7 +6,7 @@ module.exports = {
 	config: {
 		name: "info",
 		aliases: ["admin"],
-		author: "ULLASH ",
+		author: "ASHIK",
 		role: 0,
 		shortDescription: "info and my owner the cmd",
 		longDescription: "",
@@ -17,16 +17,16 @@ module.exports = {
 	onStart: async function ({ api, event }) {
 		try {
 			const ULLASHInfo = {
-				name: '𝐮 𝐥 𝐥 𝐚 𝐬 𝐡 ッ',
+				name: 'ASHIKッ',
 				gender: '𝐌𝐚𝐥𝐞',
 				age: '21',
-				Tiktok: 'ullash01',
+				Tiktok: 'পেম করলে দিতে পারি🙈🥀,
 				Relationship: '𝐢𝐧 𝐜𝐨𝐦𝐩𝐥𝐢𝐜𝐚𝐭𝐞𝐝',
 				religion: '𝐈𝐬𝐥𝐚𝐦',
-				facebook: 'https://www.facebook.com/profile.php?id=100086680386976'
+				facebook: 'https://www.facebook.com/kuang.372251'
 			};
 
-			const ULLASH = 'https://files.catbox.moe/do2kb3.jpeg';
+			const Ashik = 'https://files.catbox.moe/do2kb3.jpeg';
 			const tmpFolderPath = path.join(__dirname, 'tmp');
 
 			if (!fs.existsSync(tmpFolderPath)) {
@@ -39,13 +39,13 @@ module.exports = {
 			fs.writeFileSync(imgPath, Buffer.from(imgResponse.data, 'binary'));
 
 			const response = `╭─────❁\n│  𝗢𝗪𝗡𝗘𝗥 𝗜𝗡𝗙𝗢  \n│
-│𝐍𝐚𝐦𝐞: ${ULLASHInfo.name}
-│𝐆𝐞𝐧𝐝𝐞𝐫 : ${ULLASHInfo.gender}
-│𝐑𝐞𝐥𝐚𝐭𝐢𝐨𝐧𝐬𝐡𝐢𝐩 :${ULLASHInfo.Relationship}
-│𝐀𝐠𝐞 :${ULLASHInfo.age}
-│𝐑𝐞𝐥𝐢𝐠𝐢𝐨𝐧: ${ULLASHInfo.religion}
-│𝐓𝐢𝐤𝐭𝐨𝐤 : ${ULLASHInfo.Tiktok}
-│𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤: ${ULLASHInfo.facebook}\n╰────────────❁`;
+│𝐍𝐚𝐦𝐞: ${AshikInfo.name}
+│𝐆𝐞𝐧𝐝𝐞𝐫 : ${AshikInfo.gender}
+│𝐑𝐞𝐥𝐚𝐭𝐢𝐨𝐧𝐬𝐡𝐢𝐩 :${AshikInfo.Relationship}
+│𝐀𝐠𝐞 :${AshikInfo.age}
+│𝐑𝐞𝐥𝐢𝐠𝐢𝐨𝐧: ${AshikInfo.religion}
+│𝐓𝐢𝐤𝐭𝐨𝐤 : ${AshikInfo.Tiktok}
+│𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤: ${AshikInfo.facebook}\n╰────────────❁`;
 
 			await api.sendMessage({
 				body: response,
