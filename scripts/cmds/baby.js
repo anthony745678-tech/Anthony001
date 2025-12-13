@@ -166,7 +166,7 @@ module.exports = {
       const senderID = event.senderID;
 
       // Trigger words
-      const triggers = ["baby", "bot", "bby", "jan", "xan", "জান", "বট", "বেবি"];
+      const triggers = ["baby", "Babu", "bby", "jan", "xan", "জান", "বাবু", "বেবি"];
       if (triggers.includes(raw)) {
         const greetings = [
           "Bolo baby 💬", "হুম? বলো 😺", "হ্যাঁ জানু 😚", "শুনছি বেবি 😘",
@@ -193,7 +193,7 @@ module.exports = {
 
       // Chat trigger with prefix like "baby kemon acho"
       if (triggers.some(prefix => raw.startsWith(prefix + " "))) {
-        const query = raw.replace(/^(baby|bot|bby|jan|xan|জান|বট|বেবি)\s+/i, "").trim();
+        const query = raw.replace(/^(baby|bby|jan|xan|জান|বাবু|বেবি)\s+/i, "").trim();
         if (!query) return;
 
         const res = await axios.get(`${simsim}/simsimi?text=${encodeURIComponent(query)}&senderName=${encodeURIComponent(senderName)}`);
